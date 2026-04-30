@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    nav{
+        background-color:black;
+        color: white;
+        display: flex;
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+    }
+    li{
+        list-style: none;
+    }
+    div{
+        display: flex;
+        gap: 30px;
+        color:blueviolet;
+    }
+    .search{
+        margin-left: 360px;
+    }
+    .box1{
+        border: 20px;
+        background-color: blueviolet;
+        color: black;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+    }
+    .box2{
+        border: 20px;
+        background-color: blueviolet;
+        color: black;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+
+    }
+    .box3{
+        border: 20px;
+        background-color: blueviolet;
+        color: black;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+    }
+    .box4{
+        border: 20px;
+        background-color: blueviolet;
+        color: black;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+    }
+    .balance{
+        border: 20px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        color: black;
+        width: 475px;
+        height: 200px;
+    }
+    .rotate{
+        transform:rotate(270deg);
+        text-align: center;
+        border-radius: 30px;
+        height: 40px;
+        margin-top: 75px;
+        margin-left: 70px;
+    }
+    
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+        </ul>
+    </nav><br><br>
+    <div>
+        <div class="dash"><h2>Dashboard</h2></div>
+        <div class="search"><input style="border-radius: 30px;  height: 40px; margin: 20px; margin-left: 200px; " type="search" placeholder="Search Here.." >
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-gift"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-regular fa-message"></i>
+        <input style="border-radius:30px; height: 40px; background-color: blueviolet; " type="button" value="Generate Report">
+        <i class="fa-solid fa-signal"></i></div>
+    </div><br>
+
+    <div class="main">
+        <div class="box1">
+           <i class="fa-solid fa-file-invoice"></i>
+           <h1 style="margin-top: 15px;" >2478</h1><br>
+           <h2 style="margin-left: -120px; margin-top: 8px;"><br><br><br>Invoice</h2><br><br><br>
+        </div>
+        <div class="box2" >
+            <i class="fa-solid fa-badge-check"></i>
+            <h1  style="margin-top: 15px;" >983</h1>
+            <h2 style="margin-left: -75px; margin-top: 82px;"  >paid invoices</h2>
+        </div>
+        <div class="box3">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <h1  style="margin-top: 15px;" >1256</h1>
+            <h2 style="margin-left: -91px; margin-top:82px">unpaid invoices</h2>
+        </div>
+        <div class="box4">
+            <i class="fa-solid fa-file-invoice"></i>
+            <h1  style="margin-top: 15px;" >652</h1>
+            <h2 style="margin-left: -75px; margin-top: 82px;">total invoices sent</h2>
+        </div>
+    </div><br><br><br>
+    <div class="wallet">
+        <div class="balance">
+            <i style="margin-top: 5px;" class="fa-regular fa-circle"></i>
+            <h2>$824,571.93</h2>
+            <h4 style="margin-left: -150px; margin-top: 81px;">Wallet balance</h4>
+            <h4 style="margin-left: -132px; margin-top: 120px;">+0,8% than last week</h4>
+            <input type="text" class="rotate" value="change">
+        </div>
+        <div>
+            <h1><b>Card's Overview</b></h1>
+            
+        </div>
+    </div>
+</body>
+</html>
