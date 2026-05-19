@@ -6,17 +6,16 @@
     <title>Document</title>
     <style>
         .image{
-            display:flex;
-            gap: 20px;
+            display: grid;
         }
-        .image1{
-            border: 3px solid black;
-        }
-        .image2{
-            border: 3px solid black;
-        }
-        .image3{
-            border: 3px solid black;
+        @media(max-width:800px){
+            body{
+              background-color: indianred;
+              width:50px;
+            }
+            p{
+                font-size:10px;
+            }
         }
     </style>
 <body>
@@ -24,16 +23,16 @@
     <p>Resize the browser window to see the responsive effect</p>
     <div class="image">
         <div class="image1">
-            <img src="C:\Users\DELL\Desktop\HTML\img1.jpg" style="height:150px; width: 270px;">
-            <h3 style="text-align: center;">sun set</h3>
+            <img src="./image-html/img1.jpg" style="height:150px; width: 270px;">
+            <h3>sun set</h3>
         </div>
         <div class="image2">
-            <img src="C:\Users\DELL\Desktop\HTML\img2.jpg" style="height:150px; width: 270px;">
-            <h3 style="text-align: center;">flowers</h3>
+            <img src="./image-html/img2.jpg" style="height:150px; width: 270px;">
+            <h3>flowers</h3>
         </div>
         <div class="image3">
-            <img src="C:\Users\DELL\Desktop\HTML\img3.jpg" style="height:150px; width: 270px;">
-            <h3  style="text-align: center;">monsoon</h3>
+            <img src="./image-html/img3.jpg" style="height:150px; width: 270px;">
+            <h3 >monsoon</h3>
         </div>
     </div>
 </body>

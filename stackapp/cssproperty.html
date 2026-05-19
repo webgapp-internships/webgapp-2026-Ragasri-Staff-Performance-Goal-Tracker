@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .welcome{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+  display: flex;
+  align-items: center;
+  background-color: lightgreen;
+  inline-size: 20%;
+  border-block-width: 5px;
+  border-block-style: solid;
+  border-block-color: red,blue;
+  box-shadow: 5px 10px #888888;
+}
+body{
+     caret-color: red;
+     caret-color: transparent;
+}
+:dir(rtl) {
+  background-color: lightgreen;
+}
+input:enabled {
+  background-color: yellow;
+}
+
+input:disabled {
+  background-color: lightgray;
+}
+:where(p.intro, ul, ol) {
+  color: red;
+}
+@keyframes mymove {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+input:user-valid {
+  border: 2px solid green;
+  background-color: beige;
+}
+
+input:user-valid + span::before {
+  content: "V";
+  color: green;
+}
+#example3 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 5px double blue;
+}
+.para {
+  position: sticky;
+  background-color:hotpink;
+  width: 300px;
+  border: 15px solid blueviolet;
+  padding: 50px;
+  margin: 20px;
+}
+div.sticky {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+<body>
+    <h1>The animation-delay Property</h1>
+
+<p>Start the animation after 2 seconds:</p>
+<div class="welcome">
+    <h2>Hello</h2>
+</div><br><br><br><br><br><br><br><br><br><br>
+<h1>The caret-color Property</h1>
+
+<input value="Default caret color"><br><br>
+
+<input class="example1" value="Custom caret color"><br><br>
+
+<input class="example2" value="Transparent caret color">
+<p dir="rtl">Write this text right-to-left!</p>
+
+<h1>Demo of :disabled and :enabled</h1>
+
+<form>
+<label for="name">Name: </label><br>
+<input id="name" name="name" type="text" /><br>
+
+<label for="email">Email: </label><br>
+<input id="email" name="email" type="email" /><br>
+
+<label for="country">Country: </label><br>
+<input id="country" name="country" type="text" disabled />
+</form>
+<h1>Demo of :where()</h1>
+
+<p class="intro">This is some text with class="intro".</p>
+
+<p>Example of unordered list:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered list:</p>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<p>This is some text.</p>
+<form>
+  <label for="name">Name: </label><br>
+  <input id="name" name="name" type="text" /><br>
+  <label for="email">Email: </label><br>
+  <input id="email" name="email" type="email" required /> <span></span>
+  <p>Input a number between 1 and 10: <input type="number" min="1" max="10" /></p>
+</form>
+<div id="example3">
+  <h6>The background extends to the edge of the content box.</h6>
+</div>
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+</div>
+<br><br>
+<div class="sticky">I have position sticky!</div>
+<div style="padding-bottom:2000px">
+<div class="para">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+</body>
+</html>
